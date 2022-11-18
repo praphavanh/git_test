@@ -25,3 +25,12 @@ For example,
     git commit -m "message" is read as git | commit -m | "message"; and
     git status is read as git | status | (no destination).
 
+
+Changing the Git Commit Message Editor
+
+If you are using Visual Studio Code (and you should be if you’re following this curriculum) and you don’t want to get stuck writing a commit message in Vim because you accidentally used git commit without the message flag (-m), this command will make Visual Studio Code open a new tab with the ability to write your commit message and an optional description below it: git config --global core.editor "code --wait".
+
+There will be no confirmation or any output on the terminal after entering this command. To make a commit with Visual Studio Code as the text editor, make sure to use the git commit command without the -m flag. Just type git commit and no message after that. Once you do this, a new tab will open. Now you can write your message, and provide more information if you want, right below it. After typing your commit message, save it and exit the tab.
+
+With that out of the way, now you can choose to use either git commit -m <your message here> or git commit and enter your message with Visual Studio Code!!
+
